@@ -1,25 +1,3 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "module": "esnext",
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "outDir": "./build/",
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "target": "es5"
-  },
-  "include": [
-    "src/index.tsx"
-  ]
+  "extends": "@react-native/typescript-config/tsconfig.json"
 }
