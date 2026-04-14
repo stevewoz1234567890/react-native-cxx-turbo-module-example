@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "description": "React Native with Cxx Turbo Native Modules",
-  "author": "Ankur Pansari <anxman@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/stevewoz1234567890/CxxTurboModulesGuide#readme",
   "codegenConfig": {
