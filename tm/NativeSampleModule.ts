@@ -6,6 +6,4 @@ export interface Spec extends TurboModule {
   readonly addNumbers: (a: number, b: number) => number;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>(
-  'NativeSampleModule',
-);
+export default TurboModuleRegistry.getEnforcing<Spec>('NativeSampleModule');

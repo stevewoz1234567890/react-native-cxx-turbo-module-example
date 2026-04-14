@@ -20,7 +20,6 @@ import {
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
@@ -73,20 +72,19 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Cxx TurboModule">
-           NativeSampleModule.reverseString(...) ={' '}
-           {NativeSampleModule.reverseString(
-             'the quick brown fox jumps over the lazy dog'
-           )}
+            NativeSampleModule.reverseString(...) ={' '}
+            {NativeSampleModule.reverseString(
+              'the quick brown fox jumps over the lazy dog',
+            )}
           </Section>
           <Section title="Cxx TurboModule">
-           NativeSampleModule.addNumbers(...) ={' '}
-           {NativeSampleModule.addNumbers(3, 4)}
+            NativeSampleModule.addNumbers(...) ={' '}
+            {NativeSampleModule.addNumbers(3, 4)}
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />

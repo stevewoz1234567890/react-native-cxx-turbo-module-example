@@ -2,6 +2,14 @@
  * @format
  */
 
+jest.mock('../tm/NativeSampleModule', () => ({
+  __esModule: true,
+  default: {
+    reverseString: (input: string) => [...input].reverse().join(''),
+    addNumbers: (a: number, b: number) => a + b,
+  },
+}));
+
 import 'react-native';
 import React from 'react';
 import App from '../App';
